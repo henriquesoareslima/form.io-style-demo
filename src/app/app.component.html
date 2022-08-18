@@ -1,0 +1,37 @@
+<div class="container m-3">
+  <h4> Formio Style </h4>
+  <div class="card">
+    <div class="card-header">
+      <h4 class="card-title">Builder</h4>
+    </div>
+    <div class="card-body">
+      <form-builder [form]="form"></form-builder>
+      <hr>
+      <button class="btn btn-primary btn-block btn-lg" (click)="getFormio();"> Gerar Formuário </button>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-8">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Render</h4>
+        </div>
+        <div class="card-body">
+          <formio [form]='formRender'></formio>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-4">
+      <div class="card">
+        <div class="card-header">
+          JSON
+        </div>
+        <div class="card-body overflow-auto max-height-350">
+          {{formRenderString}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
