@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormioModule } from '@formio/angular';
 import { FormioNpsModule } from 'formio-nps'
+import { FormioProgressBarModule } from 'formio-progress-bar'
 @NgModule({
   declarations: [
     AppComponent
@@ -11,7 +12,8 @@ import { FormioNpsModule } from 'formio-nps'
   imports: [
     BrowserModule,
     FormioModule,
-    FormioNpsModule
+    FormioNpsModule,
+    FormioProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
